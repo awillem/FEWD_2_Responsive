@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Blinker', sans-serif;
+  /* Background pattern from Toptal Subtle Patterns */
+  background:linear-gradient(rgba(253, 253, 253, 0.4), rgba(253,253,253,0.5)),
+              url(../images/background/interlaced.png);
+  margin: 0;
+              
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.wrapper {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+h1, h2, h3, nav a {
+  letter-spacing: .05em;
+}
+
+header h1 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+img{
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+
+
+main {
+  background: #fdfdfd;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-nav ul {
+  padding: 0;
+}
+
+.main-nav li {
+  font-weight: bold;
+  padding: 15px;
+  margin: 5px 0;
+  background: #fdfdfd;
+  border-radius: 5px;
+
+}
+
+
+
+header p,
+.contact p {
+  font-size: 1.35rem;
+  color: gray;
+}
+
+article p {
+  font-size: 1.2rem;
+  color: dimgray;
+}
+
+article h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.footer-nav {
+  border-top: 1px solid lightgray;
+}
+
+.footer-nav ul {
+  display: none;
+}
+
+.footer-nav h1 {
+  font-size: 1.15rem;
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+.footer-nav > a {
+  text-transform: uppercase;
+  font-weight: bold;
+  float: right;
+  width: 50%;
+  padding: 16px 0;
+  margin: auto;
+  text-align: right;
+}
+
+footer span {
+  font-weight: bold;
+  color: dimgrey;
+}
+
+/***********
+************
+Clear Floats
+************
+***********/
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/****************
+*****************
+Scrollbar Styling
+*****************
+****************/
+/* Styles from https://css-tricks.com/custom-scrollbars-in-webkit/ */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+
+
+/************
+*************
+Media Queries
+*************
+************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
