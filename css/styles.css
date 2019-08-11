@@ -12,8 +12,13 @@ body {
               
 }
 
+a {
+  cursor: pointer;
+}
+
 p {
   line-height: 1.25em;
+  font-family: 'Raleway', sans-serif;
 }
 
 .wrapper {
@@ -28,9 +33,19 @@ h1, h2, h3, nav a {
   letter-spacing: .03em;
 }
 
+h1,
+nav li a,
+h2 {
+  color: #ea2e9c;
+}
+
 header h1 {
   font-size: 1.7rem;
   font-weight: bold;
+}
+
+header img {
+  border: 5px solid lightgrey;
 }
 
 h2 {
@@ -40,7 +55,7 @@ h2 {
 }
 
 img{
-  width: 80%;
+  width: 80%;  
 }
 
 li {
@@ -59,7 +74,8 @@ nav a {
   color: black;
 }
 
-.main-nav ul {
+.main-nav ul, 
+.skills ul {
   padding: 0;
 }
 
@@ -74,6 +90,8 @@ nav a {
 
 
 
+
+
 header p,
 .contact p {
   font-size: 1.35rem;
@@ -81,7 +99,14 @@ header p,
 }
 
 article {
-  margin-top: 40px;
+  margin-top: 50px;
+}
+.portfolio div {
+  padding: 0 25px 0;
+}
+
+article img {
+  box-shadow: 0 2px 5px grey;
 }
 
 article p {
@@ -90,14 +115,30 @@ article p {
   margin-top: 12px;
 }
 
-article h3 {
+h3 {
   font-size: 1.5rem;
   font-weight: 500;
   margin: 12px 0;
 }
 
+.skills i {
+  font-size: 3em;
+  color: dimgrey;
+}
+
+.skills {
+  border-top: 2px solid gainsboro;
+  width: 90%;
+}
+
+
+
+
+
 .footer-nav {
   border-top: 2px solid gainsboro;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .footer-nav ul {
@@ -107,7 +148,7 @@ article h3 {
 .footer-nav h1 {
   font-size: 1.15rem;
   float: left;
-  width: 25%;
+  width: 50%;
   text-align: left;
 }
 
@@ -178,7 +219,7 @@ Media Queries
 *************
 ************/
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
 
   .main-nav ul {
     display: inline-block;
@@ -187,6 +228,17 @@ Media Queries
   .main-nav li {
     background: none;
     float: left;  
+  }
+
+  nav a {
+    transition: all .25s;
+  }
+
+  
+  nav a:hover {
+    color: dimgrey;
+    text-shadow: 0px 0px 15px #aaa;
+    border-bottom: 2px solid #ea2e9c;
   }
 
   header {
@@ -222,6 +274,41 @@ Media Queries
     padding: 0px 6px;
   }
 
+.skills {
+  margin-top: 40px;
+  padding: 40px;
+}
+
+.skills {
+  width: 90%;
+}
+
+.skills i {
+  font-size: 5rem;
+}
+
+.skills div {
+  float: left;
+  width: 25%;
+}
+
+.skills ul {
+  float: right;
+  width: 75%;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.skills li {
+  background: linear-gradient(rgba(253, 253, 253, 0.4), rgba(325,91,92,0.1) 25%);
+  float: left;
+  width: 24%;
+  margin: 2px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
   .contact.wrapper {
     width: 75%;
   }
@@ -251,7 +338,7 @@ Media Queries
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .main-nav h1 {
     float: left;
     width: 25%;
@@ -269,6 +356,10 @@ Media Queries
 
   article {
     width: calc(100%/3);
+  }
+
+  .skills {
+    width: 70%;
   }
 
   .contact.wrapper {
