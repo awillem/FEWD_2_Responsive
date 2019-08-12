@@ -148,7 +148,7 @@ h3 {
 .footer-nav h1 {
   font-size: 1.15rem;
   float: left;
-  width: 50%;
+  width: 25%;
   text-align: left;
 }
 
@@ -307,7 +307,6 @@ Media Queries
   padding: 20px;
   border-radius: 5px;
 }
-
 
   .contact.wrapper {
     width: 75%;
